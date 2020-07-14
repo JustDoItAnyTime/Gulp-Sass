@@ -35,8 +35,8 @@ gulp.task("css", function() {
 			"node_modules/normalize.css/normalize.css",
 			"node_modules/slick-carousel/slick/slick.css"
 		])
-		.pipe(concat("_libs.scss"))
-		.pipe(gulp.dest("src/scss"))
+		.pipe(concat("_libs.sass"))
+		.pipe(gulp.dest("src/sass"))
 		.pipe(browserSync.reload({ stream: true }));
 });
 
